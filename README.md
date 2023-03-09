@@ -19,7 +19,7 @@ DATA PRE-PROCESSING:
     4.	Noise dpunctuationpunctuations, special characters, and URLs have been removed.
     5.	The text has been converted to lowercase and stopwords have been removed.
     6.	As a result of these pre-processing steps, the target column now consists of three values, 
-    0 for negative, and 2 for positive.
+        0 for negative, and 2 for positive.
     7.	The target column has an equal number of positive and negative values, making it a balanced dataset
 
 SPLIT THE DATASET INTO TRAIN TEST SPLIT:
@@ -43,7 +43,7 @@ EVALUATE MODEL:
 DEPLOYMENT:
 
     1.	Once you have a model that performs well on the testing set, you can deploy it to predict the 
-        sentiment of new tweets in real-time.
+         sentiment of new tweets in real-time.
     2.	Here I have used streamlit cloud.
 
 # 2 RATINGS OF GUVI COURSES
