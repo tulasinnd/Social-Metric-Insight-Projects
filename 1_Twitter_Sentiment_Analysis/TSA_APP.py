@@ -7,7 +7,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score
 
-# read CSV file and create independent and dependent variables
+# read CSV file and create independent and dependent variables. Here I have taken a sample of entire dataset because of spaces issues
+# you can find complete dataset from https://www.kaggle.com/datasets/kazanova/sentiment140
 Twitter_DF = pd.read_csv(r'https://raw.githubusercontent.com/tulasinnd/Social-Metric-Insight-Projects/main/1_Twitter_Sentiment_Analysis/DATASETS/TWITTER_SENTIMENT_ANALYSIS_PROCESSED_2000.csv')
 
 # recognise independent and dependent features
