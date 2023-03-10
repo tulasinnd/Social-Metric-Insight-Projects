@@ -9,7 +9,7 @@ from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, r
 
 # read CSV file and create independent and dependent variables
 # DATASETS
-Twitter_DF1 = pd.read_csv(r'DATASETS/TWITTER_SENTIMENT_ANALYSIS_PROCESSED1.csv')
+Twitter_DF1 = pd.read_csv(r'https://raw.githubusercontent.com/tulasinnd/Social-Metric-Insight-Projects/main/1_Twitter_Sentiment_Analysis/DATASETS/TWITTER_SENTIMENT_ANALYSIS_PROCESSED1.csv')
 Twitter_DF2 = pd.read_csv(r'DATASETS/TWITTER_SENTIMENT_ANALYSIS_PROCESSED2.csv')
 Twitter_DF3 = pd.read_csv(r'DATASETS/TWITTER_SENTIMENT_ANALYSIS_PROCESSED3.csv')
 Twitter_DF4 = pd.read_csv(r'DATASETS/TWITTER_SENTIMENT_ANALYSIS_PROCESSED4.csv')
