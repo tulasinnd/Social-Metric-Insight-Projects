@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
 import streamlit as st
 
-Load the dataset
+#Load the dataset
 Guvi_DF_CLEAN = pd.read_csv('2_Ratings_Of_Guvi_Courses/RATINGS_OF_GUVI_COURSES_CLEANED_DATA.csv')
 
 # Split data into features and target
