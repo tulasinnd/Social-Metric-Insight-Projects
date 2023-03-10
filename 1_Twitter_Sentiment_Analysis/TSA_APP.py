@@ -66,8 +66,9 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_recall_fscore_support
 
-# read CSV file and create independent and dependent variables
-Twitter_DF = pd.read_csv('myds.csv')
+# read CSV file and create independent and dependent variables. Here I have taken a sample of entire dataset because of spaces issues
+# you can find complete dataset from https://www.kaggle.com/datasets/kazanova/sentiment140
+Twitter_DF = pd.read_csv(r'https://raw.githubusercontent.com/tulasinnd/Social-Metric-Insight-Projects/main/1_Twitter_Sentiment_Analysis/DATASETS/TWITTER_SENTIMENT_ANALYSIS_PROCESSED_2000.csv')
 Independent_var = Twitter_DF['text'] 
 Dependent_var = Twitter_DF['final_target']
 
@@ -103,6 +104,7 @@ if user_input:
     accuracy = accuracy_score(predictions, DV_test)
     precision, recall, f1_score, support = precision_recall_fscore_support(predictions, DV_test, average='binary')
     cm = confusion_matrix(predictions, DV_test)
+    st.write('##### Model Performance')
     st.write(f"F1 score: {f1_score:.2f}")
     st.write(cm)
 
