@@ -1,8 +1,9 @@
 # SOCIAL METRIC INSIGHT PROJECTS
 
-    1. Twitter Sentiment Analysis Application Link: https://tulasinnd-social-met-1-twitter-sentiment-analysistsa-app-lr5buv.streamlit.app/
-    2. 
-    3. 
+Twitter Sentiment Analysis Application Link: 
+https://tulasinnd-social-met-1-twitter-sentiment-analysistsa-app-lr5buv.streamlit.app/
+
+
 
 # 1 Twitter Sentiment Analysis:
 
