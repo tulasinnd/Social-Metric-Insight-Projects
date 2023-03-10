@@ -8,6 +8,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score
 
 # read CSV file and create independent and dependent variables
+# DATASETS
 Twitter_DF1 = pd.read_csv(r'DATASETS/TWITTER_SENTIMENT_ANALYSIS_PROCESSED1.csv')
 Twitter_DF2 = pd.read_csv(r'DATASETS/TWITTER_SENTIMENT_ANALYSIS_PROCESSED2.csv')
 Twitter_DF3 = pd.read_csv(r'DATASETS/TWITTER_SENTIMENT_ANALYSIS_PROCESSED3.csv')
