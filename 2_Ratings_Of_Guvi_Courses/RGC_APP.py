@@ -111,12 +111,20 @@ print('R-squared score:', r2_score(y_test, y_pred))
 st.title('GUVI Rating Prediction')
 st.write('Enter the course details to predict its rating:')
 
+# course_id           1282064.0
+# price                   200.0
+# num_subscribers      268923.0
+# num_reviews           27445.0
+# num_lectures            779.0
+# Rating                    1.0
+# content_duration         78.5
+
 # Get user input
 price = st.slider('Price', min_value=0, max_value=200, value=100, step=1)
-num_subscribers = st.slider('Number of Subscribers', min_value=0, max_value=100000, value=5000, step=10)
-num_reviews = st.slider('Number of Reviews', min_value=0, max_value=1000, value=100, step=1)
-num_lectures = st.slider('Number of Lectures', min_value=0, max_value=500, value=50, step=1)
-content_duration = st.slider('Content Duration (in minutes)', min_value=0, max_value=1000, value=100, step=1)
+num_subscribers = st.slider('Number of Subscribers', min_value=0, max_value=300000, value=5000, step=10)
+num_reviews = st.slider('Number of Reviews', min_value=0, max_value=30000, value=100, step=1)
+num_lectures = st.slider('Number of Lectures', min_value=0, max_value=800, value=50, step=1)
+content_duration = st.slider('Content Duration (in minutes)', min_value=0, max_value=100, value=35, step=1)
 level = st.selectbox('Course Level', ['All Levels', 'Beginner Level', 'Intermediate Level', 'Expert Level'])
 subject = st.selectbox('Course Subject', ['Business Finance', 'Graphic Design', 'Musical Instruments', 'Web Development'])
 
