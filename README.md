@@ -4,6 +4,9 @@ Twitter Sentiment Analysis Application Link:
 https://tulasinnd-social-met-1-twitter-sentiment-analysistsa-app-lr5buv.streamlit.app/
 
 
+Ratings of Guvi Courses Application Link:
+https://tulasinnd-social-met-1-twitter-sentiment-analysistsa-app-lr5buv.streamlit.app/
+
 
 # 1 Twitter Sentiment Analysis:
 
@@ -53,5 +56,6 @@ DEPLOYMENT:
          sentiment of new tweets in real-time.
     2.	Here I have used streamlit cloud.
 
-# 2 RATINGS OF GUVI COURSES
+# 2 Ratings of Guvi Courses
+
 # 3 INSTAGRAM INFLUENCERS
