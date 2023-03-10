@@ -69,17 +69,17 @@ from sklearn.metrics import r2_score
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 # Drop irrelevant columns
-Guvi_DF = Guvi_DF.drop(['course_id', 'course_title', 'url', 'published_timestamp'], axis=1)
+Guvi_DF_CLEAN = Guvi_DF_CLEAN.drop(['course_id', 'course_title', 'url', 'published_timestamp'], axis=1)
 
 # Handle missing values
-Guvi_DF = Guvi_DF.dropna()
+Guvi_DF_CLEAN = Guvi_DF_CLEAN.dropna()
 
 # Encode categorical variables
-Guvi_DF = pd.get_dummies(Guvi_DF, columns=['level', 'subject'])
+Guvi_DF_CLEAN = pd.get_dummies(Guvi_DF_CLEAN, columns=['level', 'subject'])
 
 # Split data into training and testing sets
-X = Guvi_DF.drop(['Rating'], axis=1)
-y = Guvi_DF['Rating']
+X = Guvi_DF_CLEAN.drop(['Rating'], axis=1)
+y = Guvi_DF_CLEAN['Rating']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Check for multicollinearity
