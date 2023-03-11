@@ -58,4 +58,36 @@ DEPLOYMENT:
 
 # 2 Ratings of Guvi Courses
 
+DATA CLEANING:
+
+        Load the dataset
+            Dataset contains 3680 rows and 11 columns
+            
+        Handling missing values
+            Dataset contains negligible(< 0.1%) valus so deleting them don't effect the dataset and no loss of information
+            
+        Checking for duplicates
+            No duplicate values present 
+            
+        Removing irrelevant columns
+            I have deleted irrelevent columns that do not effect target column are course_id, course_title,url,published_timestamp
+            
+        Plottings
+            Plottings between different features are plotted to find the nature of columns, outliers and correlation
+            
+        Encoding categorical variables
+            Categorical data is encoded since ML works with numbers, here I have used label encoder
+            
+        Handling outliers
+            There are outliers present in the data that are detected using various plots like box plot,histogram and scatter plot, 
+            more than 10 % data contains outliers, inorder to handle these outliers I have used log tansformation
+            
+        Multicolliniarity
+            After finishing the entire dataset I have checked for multicolliniarity, found that the vif score of the columns 
+            is very high(10 to 20) that need to be handled while model tuning
+            
+  MODEL TRAINING, TESTING EVALUATING AND TRY NEW VALUES:
+  
+
+
 # 3 INSTAGRAM INFLUENCERS
