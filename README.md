@@ -58,6 +58,11 @@ DEPLOYMENT:
 
 # 2 Ratings of Guvi Courses
 
+INTRODUCTION:
+    
+        This model to predicts the ratings given by the learners to the course based on various factors 
+        like price, number of suscribers, number of reviews, course subject, content duration
+
 DATA CLEANING:
 
         Load the dataset
@@ -86,7 +91,59 @@ DATA CLEANING:
             After finishing the entire dataset I have checked for multicolliniarity, found that the vif score of the columns 
             is very high(10 to 20) that need to be handled while model tuning
             
-  MODEL TRAINING, TESTING EVALUATING AND TRY NEW VALUES:
+MODEL TRAINING, TESTING EVALUATING AND TRY NEW VALUES:
+  
+Importing the necessary libraries
+
+Splitting the data into training and testing sets:
+
+    Train_test_split() function is used to randomly split the data into training and testing sets.
+
+    'test_size' parameter specifies the proportion of the data to be used for testing.
+
+    'random_state' parameter is used for reproducibility of the results.
+
+Defining the preprocessing steps for numerical and categorical features:
+
+    Two separate pipelines are defined for numerical and categorical features.
+    num_transformer pipeline has two steps:
+    i. SimpleImputer with 'median' strategy to fill missing values in numerical features with the median of the column.
+    ii. StandardScaler to standardize the values of numerical features.
+
+    cat_transformer pipeline also has two steps:
+    i. SimpleImputer with 'most_frequent' strategy to fill missing values in categorical features with 
+    the most frequent value in the column.
+    ii. OneHotEncoder to one-hot encode the categorical features.
+
+Combining the preprocessing steps using ColumnTransformer:
+
+    a. ColumnTransformer combines the num_transformer and cat_transformer pipelines.
+    b. transformers parameter specifies the pipeline for each type of feature (numerical or categorical).
+    c. The 'transformers' parameter takes a list of tuples. Each tuple specifies the name of the pipeline, 
+       the pipeline itself, and the names of the columns to be transformed.
+
+Defining the Random Forest regression model:
+
+    a. RandomForestRegressor is defined with 100 decision trees and random state 42.
+
+Creating the pipeline:
+
+    a. Pipeline is created with the 'preprocessor' and 'regressor' steps.
+    b. 'preprocessor' is the ColumnTransformer object that preprocesses the data before feeding it to the model.
+    c. 'regressor' is the RandomForestRegressor object that predicts the target variable.
+
+Fitting the pipeline on the training data:
+
+    a. fit() method is called on the pipeline object to train the model on the training data.
+
+Making predictions on the test data:
+
+    a. predict() method is called on the pipeline object to make predictions on the test data.
+
+Evaluating the model performance:
+
+    a. r2_score() function is used to evaluate the model performance
+
   
 
 
