@@ -5,7 +5,7 @@ https://tulasinnd-social-met-1-twitter-sentiment-analysistsa-app-lr5buv.streamli
 
 
 Ratings of Guvi Courses Application Link:
-https://tulasinnd-social-met-1-twitter-sentiment-analysistsa-app-lr5buv.streamlit.app/
+https://tulasinnd-social-metric-2-ratings-of-guvi-coursesrgc-app-wey5zi.streamlit.app/
 
 
 # 1 Twitter Sentiment Analysis:
@@ -144,7 +144,12 @@ Evaluating the model performance:
 
     a. r2_score() function is used to evaluate the model performance
 
-  
+# 3 Instagram Influencers
 
-
-# 3 INSTAGRAM INFLUENCERS
+    Load the instagram influencers dataset and answer the given five questions, these questions will
+    help us understand various data processing techniques
+        1 Dealing with various datatypes and type conversion of features
+        2 Find the correlation between the columns
+        3 Finding the data distributions of columns
+        4 Understanding aggregate functions of dataframes
+        5 Understanding the relation between columns
