@@ -9,7 +9,7 @@ from sklearn.metrics import r2_score
 import streamlit as st
 
 # Load the dataset
-Guvi_DF_CLEAN = pd.read_csv('2_Ratings_Of_Guvi_Courses/RATINGS_OF_GUVI_COURSES_CLEANED_DATA.csv')
+Guvi_DF_CLEAN = pd.read_csv('2_Ratings_Of_Guvi_Courses/DATASETS/RATINGS_OF_GUVI_COURSES_CLEANED_DATA.csv')
 
 # Split data into features and target
 X = Guvi_DF_CLEAN[['price', 'num_subscribers', 'num_reviews', 'num_lectures', 'content_duration', 'level', 'subject']]
